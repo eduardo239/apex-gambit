@@ -1,69 +1,65 @@
-# React + TypeScript + Vite
+# Apex Gambit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A turn-based strategy game built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Apex Gambit is a browser-based game featuring heroes, cards, and tactical gameplay. The project demonstrates modern React patterns, global state management, and strong type safety.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚡ Fast development with Vite
+- 🛡️ Type safety via TypeScript
+- 🌐 Global state using React Context API
+- 🎴 Card and hero mechanics
+- 🧩 Modular component architecture
+- 🧹 Code linting with ESLint
+- 🎨 Code formatting with Prettier
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/your-username/apex-gambit.git
+   cd apex-gambit
+   ```
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+3. **Start the development server**
+   ```sh
+   npm run dev
+   ```
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Scripts
+
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run lint` — Lint codebase
+- `npm run format` — Format codebase
+
+## Project Structure
+
+```
+src/
+  components/   # Reusable UI components
+  context/      # React Context for global state
+  models/       # TypeScript models and types
+  App.tsx       # Main application entry
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Contributing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Pull requests and issues are welcome! Please follow code style and commit conventions.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+
+MIT
+
+## Acknowledgements
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
