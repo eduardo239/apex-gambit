@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.card:hover {
+  border: 2px solid red;
+  transition: 0.1s ease-in-out;
+  transform: translate(0, -5px);
+  cursor: pointer;
+}
+
+p {
+  margin: 0px;
+  padding: 4px;
+}
