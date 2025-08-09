@@ -22,6 +22,7 @@ const defaultValue = {
   dice: 0,
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const GameContext = React.createContext<{
   hero: Hero | null;
   game: TGame | null;

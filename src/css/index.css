@@ -10,20 +10,95 @@ body {
   padding: 10px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: 2px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.9);
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.grid-item {
+  background-color: antiquewhite;
+}
+.grid-score {
+  padding: 10px;
+  display: grid;
+  align-items: flex-start;
+  grid-template-rows: auto auto 1fr;
+  gap: 10px;
+}
+.grid-deck {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
 .flex {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .card {
-  border: 2px solid black;
+  border: 2px solid blueviolet;
   border-radius: 5px;
+  width: 150px;
 }
 .card:hover {
-  border: 2px solid red;
+  border: 2px solid black;
   transition: 0.1s ease-in-out;
-  transform: translate(0, -5px);
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.9);
   cursor: pointer;
+}
+
+.score {
+  border: 2px solid black;
+  padding: 10px;
 }
 
 p {
