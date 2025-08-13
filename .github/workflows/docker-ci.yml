@@ -1,5 +1,8 @@
 name: CI/CD Docker
 
+env:
+  CI: false
+
 on:
   push:
     branches:
@@ -26,7 +29,8 @@ jobs:
 
       # Build da imagem
       - name: Build da imagem Docker
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/apex-gambit:latest .
+        # run: docker build -t ${{ secrets.DOCKER_USERNAME }}/apex-gambit:latest .
+        run: docker build --progress=plain --no-cache -t apex-gambit .
 
       # Push para o Docker Hub
       - name: Push para o Docker Hub
