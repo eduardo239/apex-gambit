@@ -6,7 +6,7 @@ import type { TGame } from "../types/Game";
 import Hero from "../models/Hero";
 import Map_ from "../models/Map_";
 import { Game } from "../models/Game";
-import { TYPE_END, TYPE_START } from "../types/positions.ts";
+import { TYPE_END, TYPE_START } from "../types/positions";
 
 const defaultValue = {
   hero: null,
